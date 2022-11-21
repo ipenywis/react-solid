@@ -1,12 +1,15 @@
-export function SearchBarInput(props) {
+import cx from "clsx";
+
+interface ISearchInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  isLarge?: boolean;
+}
+
+export function SearchInput(props: ISearchInputProps) {
+  const { value, onChange, isLarge, ...restProps } = props;
+
   return (
     <div className="flex w-10/12">
-      <label
-        htmlFor="default-search"
-        className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
-      >
-        Search
-      </label>
       <div className="relative w-full">
         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
           <svg
@@ -28,10 +31,15 @@ export function SearchBarInput(props) {
         <input
           type="search"
           id="default-search"
-          className="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none"
+          className={cx(
+            "block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none",
+            isLarge && "text-3xl"
+          )}
           placeholder="Search for the right one..."
           required
-          {...props}
+          value={value}
+          onChange={onChange}
+          {...restProps}
         />
       </div>
     </div>

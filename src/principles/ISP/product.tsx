@@ -1,8 +1,9 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import styled from "styled-components";
+import { Thumbnail } from "./thumbnail";
 
-interface IProduct {
+export interface IProduct {
   id: string;
   title: string;
   price: number;
@@ -21,11 +22,7 @@ export function Product(props: IProductProps) {
   return (
     <div className="w-56 flex flex-col items-center m-2 max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img
-          className="p-8 rounded-t-lg h-48"
-          src={image}
-          alt="product image"
-        />
+        <Thumbnail imageUrl={product.image} />
       </a>
       <div className="flex flex-col px-5 pb-5">
         <a href="#">

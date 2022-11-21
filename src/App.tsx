@@ -1,10 +1,16 @@
 import "./App.css";
-import { SRP } from "./principles/srp";
+import { DIP } from "./principles/DIP";
+import { LSP } from "./principles/LSP";
+import { OCP } from "./principles/OCP";
+import { SRP } from "./principles/SRP";
 
 function App() {
   return (
     <div className="flex min-w-full h-full justify-center items-center p-8">
-      <SRP />
+      {/* <SRP /> */}
+      {/* <OCP /> */}
+      {/* <LSP /> */}
+      <DIP />
     </div>
   );
 }
