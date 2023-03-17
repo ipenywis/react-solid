@@ -3,20 +3,12 @@ import {
   HiOutlineArrowNarrowRight,
   HiOutlineArrowNarrowLeft,
 } from "react-icons/hi";
+import { Good } from "./good";
+import { Bad } from "./bad";
+import { GPT4 } from "./GPT4";
 
 export function OCP() {
-  return (
-    <div className="flex space-x-10">
-      <Button
-        text="Go Home"
-        // role="forward"
-        icon={<HiOutlineArrowNarrowRight />}
-      />
-      <Button
-        text="Go Back"
-        // role="back"
-        icon={<HiOutlineArrowNarrowLeft />}
-      />
-    </div>
-  );
+  // return <Good />;
+  // return <Bad />;
+  return <GPT4 />;
 }
