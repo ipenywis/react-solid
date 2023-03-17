@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SearchInputGPT4 } from "./GPT4";
 import { SearchInput } from "./searchInput";
 
 export function LSP() {
@@ -10,5 +11,6 @@ export function LSP() {
 
   return (
     <SearchInput value={value} onChange={handleChange} isLarge />
+    // <SearchInputGPT4 value={value} onChange={handleChange} isLarge />
   );
 }
