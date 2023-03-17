@@ -9,8 +9,8 @@ function App() {
     <div className="flex min-w-full h-full justify-center items-center p-8">
       {/* <SRP /> */}
       {/* <OCP /> */}
-      <LSP />
-      {/* <DIP /> */}
+      {/* <LSP /> */}
+      <DIP />
     </div>
   );
 }
