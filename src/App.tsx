@@ -6,6 +6,7 @@ import { SRP } from "./principles/SRP";
 
 //Advanced 
 import { SRP_ADVANCED } from "./advanced/SRP";
+import { OCP_ADVANCED } from "./advanced/OCP";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
     //   {/* <DIP /> */}
     // </div>
     <div className="flex min-w-full h-full justify-center items-center p-8">
-      <SRP_ADVANCED />
+      {/* <SRP_ADVANCED /> */}
+      <OCP_ADVANCED />
       {/* <SRP /> */}
       {/* <OCP /> */}
       {/* <LSP /> */}
