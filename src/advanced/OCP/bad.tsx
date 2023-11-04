@@ -61,6 +61,7 @@ export function Dropdown(props: DropdownProps) {
   );
 }
 
+//BAD ❌
 export function DropdownBAD() {
   const items = [
     {

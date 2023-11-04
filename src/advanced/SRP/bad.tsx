@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+//BAD ❌
 export function EditUserProfileBAD() {
   const [formData, setFormData] = useState({
     name: "",

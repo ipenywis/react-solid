@@ -48,7 +48,7 @@ const Notification = ({ project, user }: NotificationProps) => {
   }
 };
 
-// Usage
+//BAD ❌
 export function UserProfileBAD() {
   const user = {
     name: "John Doe",

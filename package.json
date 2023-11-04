@@ -12,7 +12,7 @@
     "@hookform/resolvers": "^3.3.2",
     "@tanstack/react-query": "^4.10.1",
     "@tanstack/react-query-devtools": "^4.10.1",
-    "axios": "^1.1.2",
+    "axios": "^1.6.0",
     "clsx": "^1.2.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -22,6 +22,7 @@
     "react-rating-stars-component": "^2.2.0",
     "react-simple-star-rating": "^5.1.6",
     "styled-components": "^5.3.6",
+    "uuid": "^9.0.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {

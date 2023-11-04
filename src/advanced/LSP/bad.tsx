@@ -230,6 +230,7 @@ export function Dialog() {
   );
 }
 
+//BAD ❌
 export function DialogBAD() {
   return (
     <div className="container mx-auto p-4">

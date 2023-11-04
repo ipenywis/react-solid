@@ -48,7 +48,7 @@ const UserNotification = ({ user }: UserNotificationProps) => {
   );
 };
 
-// Usage
+//GOOD ✅
 export function UserProfileGOOD() {
   const user = {
     name: "John Doe",

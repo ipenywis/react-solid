@@ -1,6 +1,7 @@
 import { EUPrivacyPolicyDialog } from "./EUPrivacyPolicyDialog";
 import { USPrivacyPolicyDialog } from "./USPrivacyPolicyDialog";
 
+//GOOD ✅
 export function DialogGOOD() {
   const handleAccept = () => {
     // Handle user's acceptance of the policy
