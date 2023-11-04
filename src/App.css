@@ -37,3 +37,8 @@
 .read-the-docs {
   color: #888;
 }
+
+p {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
