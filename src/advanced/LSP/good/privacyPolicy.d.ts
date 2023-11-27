@@ -1,4 +1,4 @@
 export interface PrivacyPolicyDialogProps {
-  onAccept: () => void;
+  onAccept: (id: string) => void;
   onDeny: () => void;
 }

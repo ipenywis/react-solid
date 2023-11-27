@@ -11,5 +11,5 @@ export function FeedbackGOOD() {
     endpoints.FEEDBACK.v2
   );
 
-  return <FeedbackForm feedbackService={feedbackServiceV1} />;
+  return <FeedbackForm feedbackService={feedbackServiceV2} />;
 }

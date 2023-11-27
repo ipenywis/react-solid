@@ -8,7 +8,7 @@ export function EUPrivacyPolicyDialog({
   const [isOpen, setIsOpen] = useState(true);
 
   const accept = () => {
-    onAccept();
+    onAccept("EUX11V1");
     setIsOpen(false);
   };
 

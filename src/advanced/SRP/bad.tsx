@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 //BAD ❌
@@ -53,12 +54,21 @@ export function EditUserProfileBAD() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Perform API POST request here with formData
-    // Replace this with your actual API endpoint and payload
-    console.log("Sending data to the API:", formData);
+    try {
+      const response = await axios.post(
+        "http://localhost:9000/user/update",
+        formData
+      );
+
+      console.log("Data Saved");
+    } catch (err) {
+      throw new Error(
+        "Error occurred when trying to save your profile changes!"
+      );
+    }
   };
 
   return (

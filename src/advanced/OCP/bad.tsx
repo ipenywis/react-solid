@@ -65,7 +65,7 @@ export function Dropdown(props: DropdownProps) {
 export function DropdownBAD() {
   const items = [
     {
-      icon: <BiCodeAlt />,
+      icon: <FaDraftingCompass />,
       name: "New Project",
       description: "Kickoff a new project",
     },

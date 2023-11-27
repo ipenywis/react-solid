@@ -45,8 +45,6 @@ export function EditUserProfileGOOD() {
     resolver: zodResolver(validationSchema),
   });
 
-  console.log("Errors: ", errors);
-
   return (
     <div className="flex flex-col max-w-md p-4">
       <h1 className="text-2xl font-bold mb-4">Edit User Profile</h1>

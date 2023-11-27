@@ -14,6 +14,7 @@ interface NotificationProps {
   user?: User;
   project?: Project;
 }
+
 const Notification = ({ project, user }: NotificationProps) => {
   if (project) {
     // Display a project notification

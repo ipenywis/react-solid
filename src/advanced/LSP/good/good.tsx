@@ -1,11 +1,11 @@
 import { EUPrivacyPolicyDialog } from "./EUPrivacyPolicyDialog";
-import { USPrivacyPolicyDialog } from "./USPrivacyPolicyDialog";
+import { PrivacyPolicyDialog } from "./PrivacyPolicyDialog";
 
 //GOOD ✅
 export function DialogGOOD() {
-  const handleAccept = () => {
+  const handleAccept = (id: string) => {
     // Handle user's acceptance of the policy
-    console.log("User accepted the Privacy Policy.");
+    console.log("User accepted the Privacy Policy. with id" + id);
   };
 
   const handleDeny = () => {
@@ -16,14 +16,14 @@ export function DialogGOOD() {
   return (
     <div className="container mx-auto p-4">
       {/* Show the Dialog component based on your application logic */}
-      <USPrivacyPolicyDialog
-        onAccept={handleAccept}
-        onDeny={handleDeny}
-      />
-      {/* <EUPrivacyPolicyDialog
+      {/* <PrivacyPolicyDialog
         onAccept={handleAccept}
         onDeny={handleDeny}
       /> */}
+      <EUPrivacyPolicyDialog
+        onAccept={handleAccept}
+        onDeny={handleDeny}
+      />
     </div>
   );
 }

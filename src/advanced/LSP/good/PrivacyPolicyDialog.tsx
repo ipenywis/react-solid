@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { PrivacyPolicyDialogProps } from "./privacyPolicy";
 
-export function USPrivacyPolicyDialog({
+export function PrivacyPolicyDialog({
   onAccept,
   onDeny,
 }: PrivacyPolicyDialogProps) {
   const [isOpen, setIsOpen] = useState(true);
 
   const accept = () => {
-    onAccept();
+    onAccept("USX11V2");
     setIsOpen(false);
   };
 
@@ -47,7 +47,7 @@ export function USPrivacyPolicyDialog({
             <div className="sm:flex sm:items-start">
               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                 <h3 className="text-lg leading-6 font-medium text-gray-900 font-black">
-                  US Privacy Policy
+                  General Privacy Policy
                 </h3>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
